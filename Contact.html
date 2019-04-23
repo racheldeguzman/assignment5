@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>My Title</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <style>
+        input{
+            width:200px;
+            border-radius: 10px;
+        }
+        select{
+            width:400px;
+            border-radius: 10px;
+        }
+        .submit{
+             justify-content:center;
+            flex-direction: row;
+        }
+        h2{
+            font-family: monospace;
+            margin-left:20px;
+        }
+        textarea{
+            border-radius: 10px;
+            width:400px;
+            border-color:aliceblue;
+        }
+    
+        @media screen and (max-width:40rem){
+            form div, h2{ display:flex;flex-direction: column;align-items:center;}
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src= "Images/boba.png" alt="boba logo" height="100"></a>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="Pictures.html">Pictures</a>
+                </li>
+                <li>
+                    <a href="Features.html">Features</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <form action="Thankyou.html" method=get>
+              <h2 style="color: darkorange;">Contact us!</h2>
+            <div>
+                <label>First Name: </label>
+                <input type="text" name="firstname" id="firstname">
+            </div>
+            
+            <div>
+                <label>Last Name: </label>
+                <input type="text" name="lastname" id="lastname">
+            </div>
+            
+            <div>
+                <label>E-mail: </label>
+                <input type="text" name="email" id="email">
+            </div>
+            
+            <div>
+                <label>How did you hear about us?</label>
+                <select>
+                    <option value="buddy">Bubble Tea Buddy</option>
+                    <option value="web">Website</option>
+                    <option value="search">Google</option>
+                    <option value="ad">Ad</option>
+                    <option value="coworker">Co-worker</option>
+                </select>
+            </div>
+            
+            <div>
+                <label>Comments:</label>
+                <textarea name="comments" id="comments" rows="4" cols="40"></textarea>
+            </div>
+ 
+            <div>
+                <label>Did you like your website experience?</label>
+                    <div style="display:flex; flex-direction: row; width:100px;margin:0px;">
+                        <input type="radio" name="join" value="Yes" checked>Yes
+                        <input type="radio" name="join" value="No">No
+                    </div>
+            </div>
+
+            <div>
+                <label>Favorite Bubble Tea(s)? (Select All that Apply)</label>
+                    <div style="display:flex; flex-direction: row; width:200px;margin:0px;">
+                        <input type="checkbox" name="choice1" value="milk"> Milk Tea
+                        <input type="checkbox" name="choice2"   value="Thai"> Thai Tea
+                        <br>
+                        <input type="checkbox" name="choice3" value="Fruit"> Fruit Tea  
+                    </div>
+            </div>
+            
+            <div class="submit">
+                <input type="submit" value="Submit" style="margin:5px;">
+                <input type="reset" value="Reset" style="margin:5px;">
+            </div>
+        </form>    
+    </main>
+    
+    <footer>
+        <a href="https://www.bubbleteasupply.com/bubble-tea-history/" target=_blank>More About Bubble Tea History</a>
+    </footer>
+    
+</body>
+</html>
