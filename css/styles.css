@@ -12,6 +12,8 @@ a {
     color:azure;
     font-family: monospace;
     font-size: large;
+    text-decoration: none;
+    transition:background-color .3s,color,.3s;
 }
 a:hover{
     color:darkcyan;
@@ -22,6 +24,7 @@ q {
 }
 q:hover{
     color:darkcyan;
+    transition:background-color .3s,color,.3s;
 }
 header{
     display:flex;
@@ -86,4 +89,11 @@ form {
 div, h2{
     border-radius:10px;
     padding:10px;
+}
+footer{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    background-color: dimgray;
+    
 }
