@@ -43,8 +43,8 @@ h1 {
     padding:50px;
     border: 2px solid #ff0000;
     border-radius: 20px;
-    border-color:rgb(143, 195, 196);
-    background-color:rgb(240, 255, 255,0.7);
+    border-color:rgba(143, 195, 196);
+    background-color:rgba(240, 255, 255,0.7);
 }
 div{
     display:flex;
@@ -76,7 +76,7 @@ div{
 form {
     display:flex;
     align-content: center;
-    background-color:rgb(143, 195, 196,0.7);
+    background-color:rgba(143, 195, 196,0.7);
     width:640px;
     flex-direction: column;
     color:aliceblue;
@@ -96,4 +96,7 @@ footer{
     align-items:center;
     background-color: dimgray;
     
+}
+nav ul{
+    list-style-type: none;
 }
